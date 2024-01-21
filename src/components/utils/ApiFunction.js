@@ -4,7 +4,7 @@ export const api = axios.create({
     baseURL: "http://localhost:8000"
 });
 
-export async function addRoom(photo: Blob, roomType: string, roomPrice: string) {
+export async function addRoom(photo, roomType, roomPrice) {
     const formData = new FormData();
     formData.append("photo", photo);
     formData.append("roomType", roomType);
